@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_circle">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/off_btn"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            android:src="@drawable/ic_off"
+            android:tint="@color/white"
+            app:backgroundTint="#87FE00"
+            app:fabSize="auto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/call_btn"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call"
+            app:backgroundTint="#00E2FE"
+            app:fabSize="auto"
+            app:layout_constraintCircle="@id/off_btn"
+            app:layout_constraintCircleAngle="0"
+            app:layout_constraintCircleRadius="125dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cam_btn"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            android:src="@drawable/ic_cam"
+            app:backgroundTint="#00E2FE"
+            app:fabSize="auto"
+            app:layout_constraintCircle="@id/off_btn"
+            app:layout_constraintCircleAngle="45"
+            app:layout_constraintCircleRadius="125dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/event_btn"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            android:src="@drawable/ic_events"
+            app:backgroundTint="#00E2FE"
+            app:fabSize="auto"
+            app:layout_constraintCircle="@id/off_btn"
+            app:layout_constraintCircleAngle="90"
+            app:layout_constraintCircleRadius="125dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/map_btn"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            android:src="@drawable/ic_map"
+            app:backgroundTint="#00E2FE"
+            app:fabSize="auto"
+            app:layout_constraintCircle="@id/off_btn"
+            app:layout_constraintCircleAngle="135"
+            app:layout_constraintCircleRadius="125dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/message_btn"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            app:backgroundTint="#00E2FE"
+            android:src="@drawable/ic_message"
+            app:fabSize="auto"
+            app:layout_constraintCircle="@id/off_btn"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="125dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/music_btn"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            app:backgroundTint="#00E2FE"
+            android:src="@drawable/ic_music"
+            app:fabSize="auto"
+            app:layout_constraintCircle="@id/off_btn"
+            app:layout_constraintCircleAngle="225"
+            app:layout_constraintCircleRadius="125dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/notes_btn"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            app:backgroundTint="#00E2FE"
+            android:src="@drawable/ic_notes"
+            app:fabSize="auto"
+            app:layout_constraintCircle="@id/off_btn"
+            app:layout_constraintCircleAngle="270"
+            app:layout_constraintCircleRadius="125dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/web_btn"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:elevation="5dp"
+            app:backgroundTint="#00E2FE"
+            android:src="@drawable/ic_web"
+            app:fabSize="auto"
+            app:layout_constraintCircle="@id/off_btn"
+            app:layout_constraintCircleAngle="315"
+            app:layout_constraintCircleRadius="125dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
